@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萌娃立方体</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+
+        .cude{
+            width: 400px;
+            height: 400px;
+            /* background-color: #bfa; */
+            
+            margin: 150px auto;
+            
+            /* 设置3D效果 */
+            /* transform-style: preserve-3d; */
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+            /* animation: rotate 60s; */
+        }
+
+        .cude:hover{
+            /* 设置3D效果 */
+            transform-style: preserve-3d;
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+            animation: rotate 60s;
+        }
+        .cude > div{
+            width: 400px;
+            height: 400px;
+            /* 为元素设置透明效果 */
+            opacity: 0.7;
+            position: absolute;
+        }
+        img{
+            vertical-align: top;
+        }
+
+        .box1{
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        .box2{
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+        .box3{
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        .box4{
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        .box5{
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        .box6{
+            transform: rotateY(0deg) translateZ(200px);
+        }
+
+        @keyframes rotate{
+            form{
+                transform: rotateX(30deg) translateZ(30deg) translateY(30);
+            }
+
+            to{
+                /* transform: rotateX(1turn) rotateZ(1turn) ; */
+                transform:  rotateX(20turn) rotateX(50deg) rotateY(10deg) translateX(50px) rotateZ(70deg) translateZ(-30px)  translateY(40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cude">
+        <!-- 引入图片 -->
+        <div class="box1">
+            <img src="./img/a01.jpg" alt="">
+        </div>
+        <div class="box2">
+            <img src="./img/a02.jpg" alt="">
+        </div>
+        <div class="box3">
+            <img src="./img/a03.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img src="./img/a04.jpg" alt="">
+        </div>
+        <div class="box5">
+            <img src="./img/a05.jpg" alt="">
+        </div>
+        <div class="box6">
+            <img src="./img/a06.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
