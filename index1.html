@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>六宝❤久久</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../Layout/css重置样式表/reset.css">
+
     <style>
         html,
         body {
@@ -12,7 +13,6 @@
             padding: 0;
             margin: 0;
             background-color: black;
-            perspective: 800px;
         }
 
         canvas {
@@ -21,57 +21,20 @@
             height: 100%;
 
         }
-    </style>
 
+        img {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            padding-left: 620px;
+            padding-top: 320px;
+            opacity: 100;
+        }
+    </style>
 </head>
 
 <body>
-    <!--/*����������*/-->
-    <div class="wrap">
-        <!--    /*��������Ԫ�ص�����*/-->
-        <div class="cube">
-            <!--ǰ��ͼƬ -->
-            <div class="out_front">
-                <img src="img/1.jpg" class="pic" />
-            </div>
-            <!--����ͼƬ -->
-            <div class="out_back">
-                <img src="img/2.jpg" class="pic" />
-            </div>
-            <!--��ͼƬ -->
-            <div class="out_left">
-                <img src="img/3.jpg" class="pic" />
-            </div>
-            <div class="out_right">
-                <img src="img/4.jpg" class="pic" />
-            </div>
-            <div class="out_top">
-                <img src="img/5.jpg" class="pic" />
-            </div>
-            <div class="out_bottom">
-                <img src="img/6.jpg" class="pic" />
-            </div>
-            <!--С������ -->
-            <span class="in_front">
-                <img src="img/7.jpg" class="in_pic" />
-            </span>
-            <span class="in_back">
-                <img src="img/8.jpg" class="in_pic" />
-            </span>
-            <span class="in_left">
-                <img src="img/9.jpg" class="in_pic" />
-            </span>
-            <span class="in_right">
-                <img src="img/10.jpg" class="in_pic" />
-            </span>
-            <span class="in_top">
-                <img src="img/11.jpg" class="in_pic" />
-            </span>
-            <span class="in_bottom">
-                <img src="img/12.jpg" class="in_pic" />
-            </span>
-        </div>
-    </div>
+    <!-- <img src="./img/a07.jpg" alt=""> -->
 
     <canvas id="pinkboard"></canvas>
     <canvas id="stars"></canvas>
