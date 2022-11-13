@@ -111,3 +111,23 @@ html{
 .cube:hover .out_bottom{
     transform: rotateX(-90deg) translateZ(300px);
 }
+
+/*鼠标移入后样式*/
+.cube:hover .out_front{
+	transform: rotateY(0deg) translateZ(200px);
+}
+.cube:hover .out_back{
+	transform: translateZ(-200px) rotateY(180deg);
+}
+.cube:hover .out_left{
+	transform: rotateY(90deg) translateZ(200px);
+}
+.cube:hover .out_right{
+	transform: rotateY(-90deg) translateZ(200px);
+}
+.cube:hover .out_top{
+	transform: rotateX(90deg) translateZ(200px);
+}
+.cube:hover .out_bottom{
+	transform: rotateX(-90deg) translateZ(200px);
+}
