@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>六宝❤久久</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../Layout/css重置样式表/reset.css">
+
     <style>
         html,
         body {
@@ -12,7 +13,6 @@
             padding: 0;
             margin: 0;
             background-color: black;
-            perspective: 800px;
         }
 
         canvas {
@@ -21,251 +21,21 @@
             height: 100%;
 
         }
-    </style>
 
+        img {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            padding-left: 620px;
+            padding-top: 320px;
+            opacity: 100;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- <img src="./img/a07.jpg" alt=""> -->
 
-    <!-- 打字效果 -->
-    <div class="myp" id="aa">
-        "❉久久同学，你好呀~"
-        "❉那个普通的夜里，相距69.02公里"
-        "❉我遇到了特别的你"
-        "❉不知为何，或许是因为有缘"
-        "❉你打开了网易云，打开了一起听"
-        "❉我打开了网易云，打开了一起听"
-        "❉你我同时戴着耳机"
-        "❉听着彼此喜欢的音乐"
-        "❉我们约定听满99小时"
-        "❉告诉彼此学校的名字"
-        "❉我们约定相识99天"
-        "❉添加彼此的联系方式"
-        "❉细细数数，现在是我们相识的第30天"
-        "❉在这30天里，我发现"
-        "❉我们不只是有共同喜欢的歌曲"
-        "❉我们无话不说，倾听彼此，相互理解"
-        "❉我们还是两个开心的吃货，乐此不疲"
-        "❉我还发现，你有一个善良可爱的心灵"
-        "❉于是，我开始渐渐心动，直到现在"
-        "❉有些心动，一旦开始，便覆水难收"
-        "❉有一种默契叫心照不宣"
-        "❉有一种感觉叫妙不可言"
-        "❉有一种幸福叫有你相伴"
-        "❉有一种思念叫望眼欲穿"
-        "❉今天是个特别的日子"
-        "❉这份来自程序员的浪漫，请你收下"
-        "❉我很期待面基那一天的到来"
-        "❉能当面说一声，那个强盗，他来了"
-        "❉希望你能给这个强盗一个机会~"
-        "❉Getting a crush on you!"
-        "❉🌹——六宝🌹"
-    </div>
-    <div style="display:none" id="w">
-        "❉久久同学，你好呀~"
-        "❉那个普通的夜里，相距69.02公里"
-        "❉我遇到了特别的你"
-        "❉不知为何，或许是因为有缘"
-        "❉你打开了网易云，打开了一起听"
-        "❉我打开了网易云，打开了一起听"
-        "❉你我同时戴着耳机"
-        "❉听着彼此喜欢的音乐"
-        "❉我们约定听满99小时"
-        "❉告诉彼此学校的名字"
-        "❉我们约定相识99天"
-        "❉添加彼此的联系方式"
-        "❉细细数数，现在是我们相识的第30天"
-        "❉在这30天里，我发现"
-        "❉我们不只是有共同喜欢的歌曲"
-        "❉我们无话不说，倾听彼此，相互理解"
-        "❉我们还是两个开心的吃货，乐此不疲"
-        "❉我还发现，你有一个善良可爱的心灵"
-        "❉于是，我开始渐渐心动，直到现在"
-        "❉有些心动，一旦开始，便覆水难收"
-        "❉有一种默契叫心照不宣"
-        "❉有一种感觉叫妙不可言"
-        "❉有一种幸福叫有你相伴"
-        "❉有一种思念叫望眼欲穿"
-        "❉今天是个特别的日子"
-        "❉这份来自程序员的浪漫，请你收下"
-        "❉我很期待面基那一天的到来"
-        "❉能当面说一声，那个强盗，他来了"
-        "❉希望你能给这个强盗一个机会~"
-        "❉Getting a crush on you!"
-        "❉🌹——六宝🌹"
-    </div>
-    <script>
-        var index = 0;
-        var word = document.getElementById("w").innerHTML;
-        function type() {
-            document.getElementById("aa").innerText = word.substring(0, index++);
-        }
-        setInterval(type, 280);
-    </script>
-    <style type="text/css">
-        #aa {
-            position: absolute;
-
-            display: flex;
-
-            width: 350px;
-
-            height: 700px;
-
-            background-color: black;
-
-            color: skyblue;
-
-            text-shadow: 0px 0px 15px #FF6EC7, 0px 0px 15px #FF6EC7, 0px 0px 15px #FF6EC7;
-
-            word-wrap: break-word;
-
-            line-height: 30px;
-
-            letter-spacing: 3px;
-
-            padding-left: 3px;
-
-            text-indent: 40px;
-
-            border-radius: 5px;
-
-            -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
-
-            -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
-
-            box-shadow: 3px 3px 3px 3px rgba(236, 8, 8, 0.1);
-
-        }
-    </style>
-    <!-- 正向计时 -->
-    <div class="item">
-        <span id="timeDate" style="position: absolute;
-        font-size: 15px;
-        text-align: center;
-        /* background-color: darkgray; */
-        color: rgb(224, 207, 23);
-        text-shadow: 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF;
-        margin-left: 400px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">载入天数...</span>
-        <br>
-        <span id="times" style="position: absolute;
-        font-size: 20px;
-        text-align: center;
-        /* background-color: darkgray; */
-        color: rgb(224, 207, 23);
-        text-shadow: 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF;
-        margin-left: 400px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">载入时分秒...</span>
-    </div>
-    <script>
-        var now = new Date();
-        function createtime() {
-            var grt = new Date("10/28/2022 23:27:00");//修改时间
-            // var grt = new Date("10/15/2022 00:06:00");
-            now.setTime(now.getTime() + 250);
-            days = (now - grt) / 1000 / 60 / 60 / 24;
-            dnum = Math.floor(days); hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
-            hnum = Math.floor(hours); if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum); mnum = Math.floor(minutes);
-            if (String(mnum).length == 1) { mnum = "0" + mnum; } seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); snum = Math.round(seconds);
-            if (String(snum).length == 1) { snum = "0" + snum; } document.getElementById("timeDate").innerHTML = "久久和六宝已经认识 " + dnum + " 天";
-            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-        } setInterval("createtime()", 250);
-    </script>
-    <!-- 倒向计时 -->
-    <h1 id="hh"></h1>
-    <script type="text/javascript">
-        function station(x, y, z) {
-            //当前时间
-            var now = Date.now(),
-                //结束时间
-                end = new Date(x, y - 1, z),
-                ends = end.getTime();
-            var ss = ends - now;
-            var s = Math.floor(ss / 1000);
-            //相差天数
-            var day = Math.floor(s / 60 / 60 / 24);
-            //相差小时数
-            var hours = Math.floor(s / 60 / 60 % 24);
-            //相差分钟数
-            var min = Math.floor(s / 60 % 60);
-            //相差秒数
-            var sec = Math.floor(s % 60);
-            var html = "距离第99天还有" + day + "天" + hours + "时" + min + "分" + sec + "秒";
-            hh.innerHTML = html;
-
-        }
-        station(2023, 02, 05);
-        // station(2023, 01, 22);
-        //一秒一次调用
-        setInterval(function () {
-            station(2023, 02, 05);
-            // station(2023, 01, 22);
-        }, 1000);
-    </script>
-    <style type="text/css">
-        #hh {
-            position: absolute;
-            font-size: 30px;
-            text-align: center;
-            /* background-color: darkgray; */
-            color: white;
-            text-shadow: 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF, 0px 0px 15px #00FFFF;
-            margin-left: 400px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
-    <!-- 音乐播放 -->
-    <audio autoplay="autoplay" loop="">
-        <source src="./mp3/超喜欢你.mp3">
-    </audio>
-    <!-- 旋转相册 -->
-    <div class="wrap">
-        <!--    /*��������Ԫ�ص�����*/-->
-        <div class="cube">
-            <!--ǰ��ͼƬ -->
-            <div class="out_front">
-                <img src="img/1.jpg" class="pic" />
-            </div>
-            <!--����ͼƬ -->
-            <div class="out_back">
-                <img src="img/2.jpg" class="pic" />
-            </div>
-            <!--��ͼƬ -->
-            <div class="out_left">
-                <img src="img/3.jpg" class="pic" />
-            </div>
-            <div class="out_right">
-                <img src="img/4.jpg" class="pic" />
-            </div>
-            <div class="out_top">
-                <img src="img/5.jpg" class="pic" />
-            </div>
-            <div class="out_bottom">
-                <img src="img/6.jpg" class="pic" />
-            </div>
-            <!--С������ -->
-            <span class="in_front">
-                <img src="img/7.jpg" class="in_pic" />
-            </span>
-            <span class="in_back">
-                <img src="img/8.jpg" class="in_pic" />
-            </span>
-            <span class="in_left">
-                <img src="img/9.jpg" class="in_pic" />
-            </span>
-            <span class="in_right">
-                <img src="img/10.jpg" class="in_pic" />
-            </span>
-            <span class="in_top">
-                <img src="img/11.jpg" class="in_pic" />
-            </span>
-            <span class="in_bottom">
-                <img src="img/12.jpg" class="in_pic" />
-            </span>
-        </div>
-    </div>
-    <!-- 爱心画布 -->
     <canvas id="pinkboard"></canvas>
     <canvas id="stars"></canvas>
     <script>
@@ -721,5 +491,7 @@
         })(document.getElementById('pinkboard'));
 
     </script>
+
 </body>
+
 </html>
